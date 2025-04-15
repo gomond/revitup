@@ -1,3 +1,4 @@
+#line 1 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 // Example sketch that comes along with RF433recv library.
 // Implements what is needed to respond to a 2-button telecommand: implement
 // receiver and callback functions.
@@ -36,6 +37,51 @@
 
 bool headUpPressed = false;
 
+#line 39 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_anycode(const BitVector *recorded);
+#line 53 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_head_up(const BitVector *recorded);
+#line 57 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_head_up_released(const BitVector *recorded);
+#line 65 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_head_down(const BitVector *recorded);
+#line 69 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_flat(const BitVector *recorded);
+#line 73 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_foot_down(const BitVector *recorded);
+#line 77 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_foot_up(const BitVector *recorded);
+#line 81 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_G(const BitVector *recorded);
+#line 85 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_lift_1(const BitVector *recorded);
+#line 89 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_lift_2(const BitVector *recorded);
+#line 93 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_anti_snore(const BitVector *recorded);
+#line 97 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_head_plus(const BitVector *recorded);
+#line 101 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_head_minus(const BitVector *recorded);
+#line 105 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_foot_plus(const BitVector *recorded);
+#line 109 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_foot_minus(const BitVector *recorded);
+#line 113 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_stop(const BitVector *recorded);
+#line 118 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_full_body(const BitVector *recorded);
+#line 122 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_1(const BitVector *recorded);
+#line 126 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_2(const BitVector *recorded);
+#line 130 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_3(const BitVector *recorded);
+#line 144 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void setup();
+#line 253 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void loop();
+#line 39 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
     char *printed_code = recorded->to_str();
@@ -261,3 +307,4 @@ void loop() {
 }
 
 // vim: ts=4:sw=4:tw=80:et
+
