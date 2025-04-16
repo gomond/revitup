@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 1 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 // Example sketch that comes along with RF433recv library.
 // Implements what is needed to respond to a 2-button telecommand: implement
 // receiver and callback functions.
@@ -35,53 +35,55 @@
     // constructor to work it out.
 #define INT_RFINPUT  0
 
-bool headUpPressed = false;
+u8 OUTPUT_PIN; 
 
-#line 39 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+bool ButtonPressed = false;
+
+#line 41 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded);
-#line 53 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_head_up(const BitVector *recorded);
-#line 57 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_head_up_released(const BitVector *recorded);
-#line 65 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 60 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_button_released(const BitVector *recorded);
+#line 68 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_head_down(const BitVector *recorded);
-#line 69 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 74 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_flat(const BitVector *recorded);
-#line 73 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 79 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_foot_down(const BitVector *recorded);
-#line 77 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 85 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_foot_up(const BitVector *recorded);
-#line 81 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 90 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_G(const BitVector *recorded);
-#line 85 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 94 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_lift_1(const BitVector *recorded);
-#line 89 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 98 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_lift_2(const BitVector *recorded);
-#line 93 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 102 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anti_snore(const BitVector *recorded);
-#line 97 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 106 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_head_plus(const BitVector *recorded);
-#line 101 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 110 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_head_minus(const BitVector *recorded);
-#line 105 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 114 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_foot_plus(const BitVector *recorded);
-#line 109 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 118 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_foot_minus(const BitVector *recorded);
-#line 113 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 122 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_stop(const BitVector *recorded);
-#line 118 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 127 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_full_body(const BitVector *recorded);
-#line 122 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 131 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_1(const BitVector *recorded);
-#line 126 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 135 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_2(const BitVector *recorded);
-#line 130 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 139 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_3(const BitVector *recorded);
-#line 144 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 153 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void setup();
-#line 253 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 262 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void loop();
-#line 39 "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 41 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
     char *printed_code = recorded->to_str();
@@ -98,30 +100,37 @@ void callback_anycode(const BitVector *recorded) {
 
 void callback_head_up(const BitVector *recorded) {
     Serial.print(F("Head Up pressed\n"));
-    headUpPressed = true;
+    OUTPUT_PIN == 4; 
+    ButtonPressed = true;
 }
-void callback_head_up_released(const BitVector *recorded) {
-    Serial.print(F("Head Up released\n"));
-    headUpPressed = false;
+void callback_button_released(const BitVector *recorded) {
+    Serial.print(F("Button released\n"));
+    ButtonPressed = false;
 }
 
 
 // Callback functions for the other buttons
 
 void callback_head_down(const BitVector *recorded) {
-    Serial.print(F("Head Down pressed\n"));
+    Serial.print(F("Head Down pressed\n")); 
+    OUTPUT_PIN = 5; 
+    ButtonPressed = true;
 }
 
 void callback_flat(const BitVector *recorded) {
     Serial.print(F("Flat pressed\n"));
+    ButtonPressed = true;
 }
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-}
+    OUTPUT_PIN = 6; // Replace 13 with the actual pin number you want to use
+    ButtonPressed = true;
+    }
 
 void callback_foot_up(const BitVector *recorded) {
     Serial.print(F("Foot Up pressed\n"));
+    OUTPUT_PIN = 7; // Replace 13 with the actual pin number you want to use
 }
 
 void callback_G(const BitVector *recorded) {
@@ -185,11 +194,11 @@ RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
     // Second parameter is optional. Could also be:
 //RF_manager rf(PIN_RFINPUT);
 
-#define OUTPUT_PIN 4 // Replace 13 with the actual pin number you want to use
+
 
 void setup() {
     pinMode(PIN_RFINPUT, INPUT);
-    pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
+    //pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
     
     Serial.begin(115200);
 
@@ -244,7 +253,7 @@ rf.register_Receiver(
 rf.register_callback(callback_head_up, 500,
                      new BitVector(32, 4, 0x78, 0x10, 0xd7, 0xbf));
 
-rf.register_callback(callback_head_up_released, 500,
+rf.register_callback(callback_button_released, 500,
                     new BitVector(32, 4, 0x78, 0x10, 0x00, 0x68));                     
 
 rf.register_callback(callback_flat, 500,
@@ -298,8 +307,8 @@ rf.register_callback(callback_massage_3, 500,
 
 void loop() {
     rf.do_events();
-
-    if (headUpPressed) {
+    pinMode(OUTPUT_PIN, OUTPUT);
+    if (ButtonPressed) {
         digitalWrite(OUTPUT_PIN, HIGH); // Replace OUTPUT_PIN with your actual pin
     } else {
         digitalWrite(OUTPUT_PIN, LOW);

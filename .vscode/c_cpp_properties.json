@@ -7,7 +7,7 @@
         "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard/**",
         "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv/**",
         "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries/**",
-        "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup/**"
+        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup/**"
       ],
       "forcedInclude": [
         "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Arduino.h"
@@ -36,9 +36,9 @@
         "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
         "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
         "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
-        "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
+        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
         "-o",
-        "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp.o"
+        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp.o"
       ],
       "defines": [
         "F_CPU=16000000L",

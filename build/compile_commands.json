@@ -24,73 +24,11 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp.o"
   ],
-  "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433Debug.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433MemoryFree.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp"
+  "file": "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp"
  },
  {
   "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -119,7 +57,7 @@
    "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
    "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433recv.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433recv.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433recv.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433recv.cpp"
  },
@@ -148,9 +86,40 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
+   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433MemoryFree.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
    "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\test_compact.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\test_compact.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\test_compact.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\test_compact.cpp"
  },
@@ -178,9 +147,40 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "-IC:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv",
+   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\libraries\\RF433recv\\RF433Debug.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\CDC.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\CDC.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\CDC.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\CDC.cpp"
  },
@@ -210,7 +210,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\PluggableUSB.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\PluggableUSB.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp"
  },
@@ -238,69 +238,9 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial2.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\IPAddress.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial1.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial1.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp"
  },
@@ -328,41 +268,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial3.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial2.cpp.o"
   ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial0.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial0.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial0.cpp"
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp"
  },
  {
   "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -390,7 +300,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp"
  },
@@ -418,9 +328,99 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial0.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial0.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial0.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\IPAddress.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\HardwareSerial3.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\Print.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\Print.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp"
  },
@@ -448,39 +448,9 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp",
-   "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\Tone.cpp.o"
-  ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp"
- },
- {
-  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\Stream.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\Stream.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp"
  },
@@ -508,9 +478,39 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp",
+   "-o",
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\Tone.cpp.o"
+  ],
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Tone.cpp"
+ },
+ {
+  "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\USBCore.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\USBCore.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp"
  },
@@ -537,7 +537,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WInterrupts.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\WInterrupts.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\WInterrupts.c.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WInterrupts.c"
  },
@@ -567,7 +567,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\WMath.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\WMath.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp"
  },
@@ -597,7 +597,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WString.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\WString.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\WString.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WString.cpp"
  },
@@ -627,7 +627,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\abi.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\abi.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp"
  },
@@ -654,7 +654,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\hooks.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\hooks.c.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c"
  },
@@ -684,7 +684,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\main.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\main.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\main.cpp"
  },
@@ -714,7 +714,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\new.cpp.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\new.cpp.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp"
  },
@@ -741,7 +741,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring.c.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c"
  },
@@ -768,7 +768,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_analog.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_analog.c.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c"
  },
@@ -795,7 +795,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_digital.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_digital.c.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c"
  },
@@ -818,7 +818,7 @@
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_pulse.S.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_pulse.S.o"
   ],
   "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S"
  },
@@ -843,11 +843,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_shift.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_pulse.c.o"
   ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c"
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c"
  },
  {
   "directory": "C:\\Users\\Greg\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -870,10 +870,10 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c",
+   "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c",
    "-o",
-   "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_pulse.c.o"
+   "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\core\\wiring_shift.c.o"
   ],
-  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.c"
+  "file": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c"
  }
 ]

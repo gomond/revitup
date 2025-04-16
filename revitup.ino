@@ -34,7 +34,9 @@
     // constructor to work it out.
 #define INT_RFINPUT  0
 
-bool headUpPressed = false;
+u8 OUTPUT_PIN; 
+
+bool ButtonPressed = false;
 
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
@@ -52,30 +54,37 @@ void callback_anycode(const BitVector *recorded) {
 
 void callback_head_up(const BitVector *recorded) {
     Serial.print(F("Head Up pressed\n"));
-    headUpPressed = true;
+    OUTPUT_PIN == 4; 
+    ButtonPressed = true;
 }
-void callback_head_up_released(const BitVector *recorded) {
-    Serial.print(F("Head Up released\n"));
-    headUpPressed = false;
+void callback_button_released(const BitVector *recorded) {
+    Serial.print(F("Button released\n"));
+    ButtonPressed = false;
 }
 
 
 // Callback functions for the other buttons
 
 void callback_head_down(const BitVector *recorded) {
-    Serial.print(F("Head Down pressed\n"));
+    Serial.print(F("Head Down pressed\n")); 
+    OUTPUT_PIN = 5; 
+    ButtonPressed = true;
 }
 
 void callback_flat(const BitVector *recorded) {
     Serial.print(F("Flat pressed\n"));
+    ButtonPressed = true;
 }
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-}
+    OUTPUT_PIN = 6; // Replace 13 with the actual pin number you want to use
+    ButtonPressed = true;
+    }
 
 void callback_foot_up(const BitVector *recorded) {
     Serial.print(F("Foot Up pressed\n"));
+    OUTPUT_PIN = 7; // Replace 13 with the actual pin number you want to use
 }
 
 void callback_G(const BitVector *recorded) {
@@ -139,11 +148,11 @@ RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
     // Second parameter is optional. Could also be:
 //RF_manager rf(PIN_RFINPUT);
 
-#define OUTPUT_PIN 4 // Replace 13 with the actual pin number you want to use
+
 
 void setup() {
     pinMode(PIN_RFINPUT, INPUT);
-    pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
+    //pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
     
     Serial.begin(115200);
 
@@ -198,7 +207,7 @@ rf.register_Receiver(
 rf.register_callback(callback_head_up, 500,
                      new BitVector(32, 4, 0x78, 0x10, 0xd7, 0xbf));
 
-rf.register_callback(callback_head_up_released, 500,
+rf.register_callback(callback_button_released, 500,
                     new BitVector(32, 4, 0x78, 0x10, 0x00, 0x68));                     
 
 rf.register_callback(callback_flat, 500,
@@ -252,8 +261,8 @@ rf.register_callback(callback_massage_3, 500,
 
 void loop() {
     rf.do_events();
-
-    if (headUpPressed) {
+    pinMode(OUTPUT_PIN, OUTPUT);
+    if (ButtonPressed) {
         digitalWrite(OUTPUT_PIN, HIGH); // Replace OUTPUT_PIN with your actual pin
     } else {
         digitalWrite(OUTPUT_PIN, LOW);
