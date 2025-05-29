@@ -28,62 +28,76 @@
 //
 
 #include "RF433recv.h"
+
 #include <Arduino.h>
+//#include <ESP32Encoder.h>
+
+#define CLK 13 // CLK ENCODER 
+#define DT 15 // DT ENCODER 
+//#define foot_CLK 16 // CLK ENCODER 
+//#define foot_DT 17 // DT ENCODER 
+ 
+//ESP32Encoder encoder_head;
+//ESP32Encoder encoder_foot;
 
 #define PIN_RFINPUT  2
     // Specifying the interrupt number is optional, you can leave it to the
     // constructor to work it out.
-#define INT_RFINPUT  0
+//#define INT_RFINPUT  2
+//Relay HeadUp(4, false); // constructor receives (pin, isNormallyOpen) true = Normally Open, false = Normally Closed
+//Relay HeadDown(5,false);
+//Relay FootUp(6,false);
+//Relay FootDown(7,false);
 
-u8 OUTPUT_PIN; 
+uint8_t OUTPUT_PIN_1, OUTPUT_PIN_2; 
 
 bool ButtonPressed = false;
 
-#line 41 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_anycode(const BitVector *recorded);
 #line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_anycode(const BitVector *recorded);
+#line 69 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_head_up(const BitVector *recorded);
-#line 60 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 75 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_button_released(const BitVector *recorded);
-#line 68 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 83 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_head_down(const BitVector *recorded);
-#line 74 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_flat(const BitVector *recorded);
-#line 79 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_foot_down(const BitVector *recorded);
-#line 85 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_foot_up(const BitVector *recorded);
 #line 90 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_G(const BitVector *recorded);
-#line 94 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_lift_1(const BitVector *recorded);
-#line 98 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_lift_2(const BitVector *recorded);
-#line 102 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_anti_snore(const BitVector *recorded);
+void callback_flat(const BitVector *recorded);
+#line 95 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_foot_down(const BitVector *recorded);
+#line 101 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_foot_up(const BitVector *recorded);
 #line 106 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_massage_head_plus(const BitVector *recorded);
+void callback_G(const BitVector *recorded);
 #line 110 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_massage_head_minus(const BitVector *recorded);
+void callback_lift_1(const BitVector *recorded);
 #line 114 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_massage_foot_plus(const BitVector *recorded);
+void callback_lift_2(const BitVector *recorded);
 #line 118 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_massage_foot_minus(const BitVector *recorded);
+void callback_anti_snore(const BitVector *recorded);
 #line 122 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_head_plus(const BitVector *recorded);
+#line 126 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_head_minus(const BitVector *recorded);
+#line 130 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_foot_plus(const BitVector *recorded);
+#line 134 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+void callback_massage_foot_minus(const BitVector *recorded);
+#line 138 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_stop(const BitVector *recorded);
-#line 127 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 143 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_full_body(const BitVector *recorded);
-#line 131 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 147 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_1(const BitVector *recorded);
-#line 135 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 151 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_2(const BitVector *recorded);
-#line 139 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 155 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_3(const BitVector *recorded);
-#line 153 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 169 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void setup();
-#line 262 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 281 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void loop();
-#line 41 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
     char *printed_code = recorded->to_str();
@@ -100,7 +114,8 @@ void callback_anycode(const BitVector *recorded) {
 
 void callback_head_up(const BitVector *recorded) {
     Serial.print(F("Head Up pressed\n"));
-    OUTPUT_PIN == 4; 
+    OUTPUT_PIN_1 = 4; // Set the pin for Head Up
+    OUTPUT_PIN_2 = 5; // Set the pin for Head Down
     ButtonPressed = true;
 }
 void callback_button_released(const BitVector *recorded) {
@@ -113,7 +128,8 @@ void callback_button_released(const BitVector *recorded) {
 
 void callback_head_down(const BitVector *recorded) {
     Serial.print(F("Head Down pressed\n")); 
-    OUTPUT_PIN = 5; 
+    OUTPUT_PIN_1 = 5; // Set the pin for Head Up
+    OUTPUT_PIN_2 = 4; // Set the pin for Head Down
     ButtonPressed = true;
 }
 
@@ -124,13 +140,13 @@ void callback_flat(const BitVector *recorded) {
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-    OUTPUT_PIN = 6; // Replace 13 with the actual pin number you want to use
+    
     ButtonPressed = true;
     }
 
 void callback_foot_up(const BitVector *recorded) {
     Serial.print(F("Foot Up pressed\n"));
-    OUTPUT_PIN = 7; // Replace 13 with the actual pin number you want to use
+    
 }
 
 void callback_G(const BitVector *recorded) {
@@ -190,15 +206,18 @@ void callback_massage_3(const BitVector *recorded) {
 
 
 
-RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
+//RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
     // Second parameter is optional. Could also be:
-//RF_manager rf(PIN_RFINPUT);
+RF_manager rf(PIN_RFINPUT);
 
 
 
 void setup() {
     pinMode(PIN_RFINPUT, INPUT);
     //pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
+
+    //encoder_head.attachHalfQuad ( DT, CLK );
+    //encoder_head.setCount ( 0 );
     
     Serial.begin(115200);
 
@@ -212,7 +231,7 @@ void setup() {
 
    // Data: 78 10 d7 bf
 
-
+Serial.print(F("Im Here Setup\n")); 
 
 // 40 Bit registration
 
@@ -307,11 +326,14 @@ rf.register_callback(callback_massage_3, 500,
 
 void loop() {
     rf.do_events();
-    pinMode(OUTPUT_PIN, OUTPUT);
+    pinMode(OUTPUT_PIN_1, OUTPUT);
+    pinMode(OUTPUT_PIN_2, OUTPUT);
     if (ButtonPressed) {
-        digitalWrite(OUTPUT_PIN, HIGH); // Replace OUTPUT_PIN with your actual pin
+        digitalWrite(OUTPUT_PIN_1, HIGH); // Replace OUTPUT_PIN with your actual pin
+        digitalWrite(OUTPUT_PIN_2, LOW); // Replace OUTPUT_PIN with your actual pin
     } else {
-        digitalWrite(OUTPUT_PIN, LOW);
+        digitalWrite(OUTPUT_PIN_1, HIGH);
+        digitalWrite(OUTPUT_PIN_2, HIGH); // Replace OUTPUT_PIN with your actual pin
     }
 }
 

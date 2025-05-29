@@ -2,17 +2,17 @@
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino"
+    "Includepath": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32"
   },
   {
     "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard"
+    "Includepath": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\variants\\esp32c6"
   },
   {
     "Sourcefile": "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
     "Include": "RF433recv.h",
-    "Includepath": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv"
+    "Includepath": "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv"
   },
   {
     "Sourcefile": "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
@@ -20,22 +20,22 @@
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp",
+    "Sourcefile": "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv\\RF433Debug.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp",
+    "Sourcefile": "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv\\RF433MemoryFree.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\RF433recv.cpp",
+    "Sourcefile": "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv\\RF433recv.cpp",
     "Include": "",
     "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Greg\\OneDrive\\Documents\\Arduino\\libraries\\RF433recv\\test_compact.cpp",
+    "Sourcefile": "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv\\test_compact.cpp",
     "Include": "",
     "Includepath": null
   }

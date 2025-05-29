@@ -27,14 +27,28 @@
 //
 
 #include "RF433recv.h"
+
 #include <Arduino.h>
+//#include <ESP32Encoder.h>
+
+#define CLK 13 // CLK ENCODER 
+#define DT 15 // DT ENCODER 
+//#define foot_CLK 16 // CLK ENCODER 
+//#define foot_DT 17 // DT ENCODER 
+ 
+//ESP32Encoder encoder_head;
+//ESP32Encoder encoder_foot;
 
 #define PIN_RFINPUT  2
     // Specifying the interrupt number is optional, you can leave it to the
     // constructor to work it out.
-#define INT_RFINPUT  0
+//#define INT_RFINPUT  2
+//Relay HeadUp(4, false); // constructor receives (pin, isNormallyOpen) true = Normally Open, false = Normally Closed
+//Relay HeadDown(5,false);
+//Relay FootUp(6,false);
+//Relay FootDown(7,false);
 
-u8 OUTPUT_PIN; 
+uint8_t OUTPUT_PIN_1, OUTPUT_PIN_2; 
 
 bool ButtonPressed = false;
 
@@ -54,7 +68,8 @@ void callback_anycode(const BitVector *recorded) {
 
 void callback_head_up(const BitVector *recorded) {
     Serial.print(F("Head Up pressed\n"));
-    OUTPUT_PIN == 4; 
+    OUTPUT_PIN_1 = 4; // Set the pin for Head Up
+    OUTPUT_PIN_2 = 5; // Set the pin for Head Down
     ButtonPressed = true;
 }
 void callback_button_released(const BitVector *recorded) {
@@ -67,7 +82,8 @@ void callback_button_released(const BitVector *recorded) {
 
 void callback_head_down(const BitVector *recorded) {
     Serial.print(F("Head Down pressed\n")); 
-    OUTPUT_PIN = 5; 
+    OUTPUT_PIN_1 = 5; // Set the pin for Head Up
+    OUTPUT_PIN_2 = 4; // Set the pin for Head Down
     ButtonPressed = true;
 }
 
@@ -78,13 +94,16 @@ void callback_flat(const BitVector *recorded) {
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-    OUTPUT_PIN = 6; // Replace 13 with the actual pin number you want to use
+    OUTPUT_PIN_1 = 7; // Set the pin for Foot Down
+    OUTPUT_PIN_2 = 6; // Set the pin for Foot Up
     ButtonPressed = true;
     }
 
 void callback_foot_up(const BitVector *recorded) {
     Serial.print(F("Foot Up pressed\n"));
-    OUTPUT_PIN = 7; // Replace 13 with the actual pin number you want to use
+    OUTPUT_PIN_1 = 6; // Set the pin for Foot Up
+    OUTPUT_PIN_2 = 7; // Set the pin for Foot Down
+    ButtonPressed = true;
 }
 
 void callback_G(const BitVector *recorded) {
@@ -144,15 +163,18 @@ void callback_massage_3(const BitVector *recorded) {
 
 
 
-RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
+//RF_manager rf(PIN_RFINPUT, INT_RFINPUT);
     // Second parameter is optional. Could also be:
-//RF_manager rf(PIN_RFINPUT);
+RF_manager rf(PIN_RFINPUT);
 
 
 
 void setup() {
     pinMode(PIN_RFINPUT, INPUT);
     //pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
+
+    //encoder_head.attachHalfQuad ( DT, CLK );
+    //encoder_head.setCount ( 0 );
     
     Serial.begin(115200);
 
@@ -166,7 +188,7 @@ void setup() {
 
    // Data: 78 10 d7 bf
 
-
+Serial.print(F("Im Here Setup\n")); 
 
 // 40 Bit registration
 
@@ -261,11 +283,14 @@ rf.register_callback(callback_massage_3, 500,
 
 void loop() {
     rf.do_events();
-    pinMode(OUTPUT_PIN, OUTPUT);
+    pinMode(OUTPUT_PIN_1, OUTPUT);
+    pinMode(OUTPUT_PIN_2, OUTPUT);
     if (ButtonPressed) {
-        digitalWrite(OUTPUT_PIN, HIGH); // Replace OUTPUT_PIN with your actual pin
+        digitalWrite(OUTPUT_PIN_1, HIGH); // Replace OUTPUT_PIN with your actual pin
+        digitalWrite(OUTPUT_PIN_2, LOW); // Replace OUTPUT_PIN with your actual pin
     } else {
-        digitalWrite(OUTPUT_PIN, LOW);
+        digitalWrite(OUTPUT_PIN_1, HIGH);
+        digitalWrite(OUTPUT_PIN_2, HIGH); // Replace OUTPUT_PIN with your actual pin
     }
 }
 

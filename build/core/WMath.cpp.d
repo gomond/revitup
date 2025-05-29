@@ -1,2 +1,20 @@
 C:\Users\Greg\iCloudDrive\Documents\Arduino\revitup\build\core\WMath.cpp.o: \
- C:\Users\Greg\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\WMath.cpp
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.2.0\cores\esp32\WMath.cpp \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_system/include/esp_system.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_common/include/esp_err.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_common/include/esp_compiler.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_common/include/esp_attr.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_common/include/esp_bit_defs.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_common/include/esp_idf_version.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.2.0\cores\esp32\esp32-hal-log.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_timer/include/esp_timer.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_hw_support/include/esp_etm.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_rom/esp32c6/include/esp32c6/rom/ets_sys.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/log/include/esp_log.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_rom/include/esp_rom_sys.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/soc/esp32c6/include/soc/reset_reasons.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/log/include/esp_log_level.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/log/include/esp_log_color.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/log/include/esp_log_buffer.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/log/include/esp_log_timestamp.h \
+ C:\Users\Greg\AppData\Local\Arduino15\packages\esp32\tools\esp32-arduino-libs\idf-release_v5.4-2f7dcd86-v1\esp32c6/include/esp_hw_support/include/esp_random.h
