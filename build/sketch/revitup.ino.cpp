@@ -65,37 +65,37 @@ void callback_head_down(const BitVector *recorded);
 void callback_flat(const BitVector *recorded);
 #line 95 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_foot_down(const BitVector *recorded);
-#line 101 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 102 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_foot_up(const BitVector *recorded);
-#line 106 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 109 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_G(const BitVector *recorded);
-#line 110 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 113 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_lift_1(const BitVector *recorded);
-#line 114 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 117 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_lift_2(const BitVector *recorded);
-#line 118 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 121 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anti_snore(const BitVector *recorded);
-#line 122 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 125 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_head_plus(const BitVector *recorded);
-#line 126 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 129 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_head_minus(const BitVector *recorded);
-#line 130 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 133 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_foot_plus(const BitVector *recorded);
-#line 134 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 137 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_foot_minus(const BitVector *recorded);
-#line 138 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 141 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_stop(const BitVector *recorded);
-#line 143 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 146 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_full_body(const BitVector *recorded);
-#line 147 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 150 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_1(const BitVector *recorded);
-#line 151 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 154 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_2(const BitVector *recorded);
-#line 155 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 158 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_massage_3(const BitVector *recorded);
-#line 169 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 172 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void setup();
-#line 281 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 284 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void loop();
 #line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
@@ -140,13 +140,16 @@ void callback_flat(const BitVector *recorded) {
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-    
+    OUTPUT_PIN_1 = 7; // Set the pin for Foot Down
+    OUTPUT_PIN_2 = 6; // Set the pin for Foot Up
     ButtonPressed = true;
     }
 
 void callback_foot_up(const BitVector *recorded) {
     Serial.print(F("Foot Up pressed\n"));
-    
+    OUTPUT_PIN_1 = 6; // Set the pin for Foot Up
+    OUTPUT_PIN_2 = 7; // Set the pin for Foot Down
+    ButtonPressed = true;
 }
 
 void callback_G(const BitVector *recorded) {
