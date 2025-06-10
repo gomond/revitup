@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 1 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 // Example sketch that comes along with RF433recv library.
 // Implements what is needed to respond to a 2-button telecommand: implement
 // receiver and callback functions.
@@ -53,51 +53,51 @@ uint8_t OUTPUT_PIN_1, OUTPUT_PIN_2;
 
 bool ButtonPressed = false;
 
-#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 55 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded);
-#line 69 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 69 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_head_up(const BitVector *recorded);
-#line 75 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 75 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_button_released(const BitVector *recorded);
-#line 83 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 83 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_head_down(const BitVector *recorded);
-#line 90 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 90 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_flat(const BitVector *recorded);
-#line 95 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 95 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_foot_down(const BitVector *recorded);
-#line 102 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 102 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_foot_up(const BitVector *recorded);
-#line 109 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 109 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_G(const BitVector *recorded);
-#line 113 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 113 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_lift_1(const BitVector *recorded);
-#line 117 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 117 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_lift_2(const BitVector *recorded);
-#line 121 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 121 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anti_snore(const BitVector *recorded);
-#line 125 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 125 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_head_plus(const BitVector *recorded);
-#line 129 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 129 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_head_minus(const BitVector *recorded);
-#line 133 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 133 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_foot_plus(const BitVector *recorded);
-#line 137 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 137 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_foot_minus(const BitVector *recorded);
-#line 141 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 141 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_stop(const BitVector *recorded);
-#line 146 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 146 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_full_body(const BitVector *recorded);
-#line 150 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 150 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_1(const BitVector *recorded);
-#line 154 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 154 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_2(const BitVector *recorded);
-#line 158 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 158 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_3(const BitVector *recorded);
-#line 172 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 172 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void setup();
-#line 284 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 284 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void loop();
-#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 55 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
     char *printed_code = recorded->to_str();
