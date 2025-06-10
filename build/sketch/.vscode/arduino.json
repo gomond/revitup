@@ -1,6 +1,6 @@
 #line 1 "C:\\Users\\gomond\\Documents\\Git\\revitup\\.vscode\\arduino.json"
 {
-  "port": "COM15",
+  "port": "COM5",
   "monitorPortSettings": {
     "port": "COM8",
     "baudRate": 115200,
