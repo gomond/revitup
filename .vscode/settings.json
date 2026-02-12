@@ -1,4 +1,4 @@
 {
-    "idf.pythonInstallPath": "C:\\Users\\Greg\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.pythonInstallPath": "/opt/homebrew/bin/python3",
     "idf.portWin": "COM8"
 }
