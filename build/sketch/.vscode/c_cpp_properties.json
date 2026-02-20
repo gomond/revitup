@@ -1,25 +1,25 @@
-#line 1 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\.vscode\\c_cpp_properties.json"
+#line 1 "C:\\Users\\gomond\\Documents\\Git\\revitup\\.vscode\\c_cpp_properties.json"
 {
   "configurations": [
     {
       "name": "Arduino",
       "includePath": [
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32/**",
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\variants\\esp32c6/**",
-        "C:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv/**",
-        "C:\\Users\\Greg\\Documents\\Arduino\\libraries/**",
-        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup/**",
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6\\include/**"
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32/**",
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\variants\\esp32c6/**",
+        "C:\\Users\\gomond\\Documents\\Arduino\\libraries\\RF433recv/**",
+        "C:\\Users\\gomond\\Documents\\Arduino\\libraries/**",
+        "C:\\Users\\gomond\\Documents\\Git\\revitup/**",
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6\\include/**"
       ],
       "forcedInclude": [
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32\\Arduino.h"
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32\\Arduino.h"
       ],
-      "compilerPath": "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2411/bin/riscv32-esp-elf-g++",
+      "compilerPath": "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2411/bin/riscv32-esp-elf-g++",
       "compilerArgs": [
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2411/bin/riscv32-esp-elf-g++",
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2411/bin/riscv32-esp-elf-g++",
         "-MMD",
         "-c",
-        "@C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/cpp_flags",
+        "@C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/cpp_flags",
         "-w",
         "-Os",
         "-Werror=return-type",
@@ -36,20 +36,20 @@
         "-DCORE_DEBUG_LEVEL=0",
         "-DARDUINO_USB_MODE=1",
         "-DARDUINO_USB_CDC_ON_BOOT=0",
-        "@C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/defines",
-        "-IC:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup",
+        "@C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/defines",
+        "-IC:\\Users\\gomond\\Documents\\Git\\revitup",
         "-iprefix",
-        "C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/include/",
-        "@C:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/includes",
-        "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/qio_qspi/include",
-        "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32",
-        "-IC:\\Users\\Greg\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\variants\\esp32c6",
-        "-IC:\\Users\\Greg\\Documents\\Arduino\\libraries\\RF433recv",
-        "@C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build/build_opt.h",
-        "@C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build/file_opts",
-        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp",
+        "C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/include/",
+        "@C:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/flags/includes",
+        "-IC:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32-arduino-libs\\idf-release_v5.4-2f7dcd86-v1\\esp32c6/qio_qspi/include",
+        "-IC:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\cores\\esp32",
+        "-IC:\\Users\\gomond\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.2.0\\variants\\esp32c6",
+        "-IC:\\Users\\gomond\\Documents\\Arduino\\libraries\\RF433recv",
+        "@C:\\Users\\gomond\\Documents\\Git\\revitup\\build/build_opt.h",
+        "@C:\\Users\\gomond\\Documents\\Git\\revitup\\build/file_opts",
+        "C:\\Users\\gomond\\Documents\\Git\\revitup\\build\\sketch\\revitup.ino.cpp",
         "-o",
-        "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\build\\sketch\\revitup.ino.cpp.o"
+        "C:\\Users\\gomond\\Documents\\Git\\revitup\\build\\sketch\\revitup.ino.cpp.o"
       ],
       "defines": [
         "F_CPU=160000000L",

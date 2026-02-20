@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 1 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 // Example sketch that comes along with RF433recv library.
 // Implements what is needed to respond to a 2-button telecommand: implement
 // receiver and callback functions.
@@ -49,55 +49,59 @@
 //Relay FootUp(6,false);
 //Relay FootDown(7,false);
 
-uint8_t OUTPUT_PIN_1, OUTPUT_PIN_2; 
+#define head_Up_PIN 4
+#define head_Dn_PIN 5
+#define foot_Up_PIN 6
+#define foot_Dn_PIN 7 
 
 bool ButtonPressed = false;
+int  But_ID = 0; // Variable to store the button ID
 
-#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 59 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded);
-#line 69 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 73 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_head_up(const BitVector *recorded);
-#line 75 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 78 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_button_released(const BitVector *recorded);
-#line 83 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 87 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_head_down(const BitVector *recorded);
-#line 90 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_flat(const BitVector *recorded);
-#line 95 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
-void callback_foot_down(const BitVector *recorded);
-#line 102 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 93 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_foot_up(const BitVector *recorded);
-#line 109 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 99 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
+void callback_foot_down(const BitVector *recorded);
+#line 105 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
+void callback_flat(const BitVector *recorded);
+#line 111 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_G(const BitVector *recorded);
-#line 113 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 117 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_lift_1(const BitVector *recorded);
-#line 117 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 123 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_lift_2(const BitVector *recorded);
-#line 121 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 129 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anti_snore(const BitVector *recorded);
-#line 125 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 135 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_head_plus(const BitVector *recorded);
-#line 129 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 139 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_head_minus(const BitVector *recorded);
-#line 133 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 143 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_foot_plus(const BitVector *recorded);
-#line 137 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 147 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_foot_minus(const BitVector *recorded);
-#line 141 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 151 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_stop(const BitVector *recorded);
-#line 146 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 156 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_full_body(const BitVector *recorded);
-#line 150 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 160 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_1(const BitVector *recorded);
-#line 154 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 164 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_2(const BitVector *recorded);
-#line 158 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 168 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_massage_3(const BitVector *recorded);
-#line 172 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 182 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void setup();
-#line 284 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 298 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void loop();
-#line 55 "C:\\Users\\Greg\\iCloudDrive\\Documents\\Arduino\\revitup\\revitup.ino"
+#line 59 "C:\\Users\\gomond\\Documents\\Git\\revitup\\revitup.ino"
 void callback_anycode(const BitVector *recorded) {
     Serial.print(F("Code received: "));
     char *printed_code = recorded->to_str();
@@ -114,12 +118,12 @@ void callback_anycode(const BitVector *recorded) {
 
 void callback_head_up(const BitVector *recorded) {
     Serial.print(F("Head Up pressed\n"));
-    OUTPUT_PIN_1 = 4; // Set the pin for Head Up
-    OUTPUT_PIN_2 = 5; // Set the pin for Head Down
+    But_ID = 1; // Set the button ID to 1 for Head Up
     ButtonPressed = true;
 }
 void callback_button_released(const BitVector *recorded) {
     Serial.print(F("Button released\n"));
+    But_ID = 0; // Reset the button ID to 0 when released
     ButtonPressed = false;
 }
 
@@ -128,44 +132,50 @@ void callback_button_released(const BitVector *recorded) {
 
 void callback_head_down(const BitVector *recorded) {
     Serial.print(F("Head Down pressed\n")); 
-    OUTPUT_PIN_1 = 5; // Set the pin for Head Up
-    OUTPUT_PIN_2 = 4; // Set the pin for Head Down
+    But_ID = 2; // Set the button ID to 2 for Head Down
     ButtonPressed = true;
 }
 
-void callback_flat(const BitVector *recorded) {
-    Serial.print(F("Flat pressed\n"));
+void callback_foot_up(const BitVector *recorded) {
+    Serial.print(F("Foot Up pressed\n"));
+    But_ID = 3; // Set the button ID to 3 for Foot Up
     ButtonPressed = true;
 }
 
 void callback_foot_down(const BitVector *recorded) {
     Serial.print(F("Foot Down pressed\n"));
-    OUTPUT_PIN_1 = 7; // Set the pin for Foot Down
-    OUTPUT_PIN_2 = 6; // Set the pin for Foot Up
+    But_ID = 4; // Set the button ID to 4 for Foot Down
     ButtonPressed = true;
     }
 
-void callback_foot_up(const BitVector *recorded) {
-    Serial.print(F("Foot Up pressed\n"));
-    OUTPUT_PIN_1 = 6; // Set the pin for Foot Up
-    OUTPUT_PIN_2 = 7; // Set the pin for Foot Down
+void callback_flat(const BitVector *recorded) {
+    Serial.print(F("Flat pressed\n"));
+    But_ID = 5; // Set the button ID to 5 for Flat
     ButtonPressed = true;
 }
 
 void callback_G(const BitVector *recorded) {
     Serial.print(F("G pressed\n"));
+    But_ID = 6; // Set the button ID to 6 for G
+    ButtonPressed = true;
 }
 
 void callback_lift_1(const BitVector *recorded) {
     Serial.print(F("Lift 1 pressed\n"));
+    But_ID = 7; // Set the button ID to 7 for Lift 1
+    ButtonPressed = true;
 }
 
 void callback_lift_2(const BitVector *recorded) {
     Serial.print(F("Lift 2 pressed\n"));
+    But_ID = 8; // Set the button ID to 8 for Lift 2
+    ButtonPressed = true;
 }
 
 void callback_anti_snore(const BitVector *recorded) {
     Serial.print(F("Anti Snore pressed\n"));
+    But_ID = 9; // Set the button ID to 9 for Anti Snore
+    ButtonPressed = true;
 }
 
 void callback_massage_head_plus(const BitVector *recorded) {
@@ -217,7 +227,11 @@ RF_manager rf(PIN_RFINPUT);
 
 void setup() {
     pinMode(PIN_RFINPUT, INPUT);
-    //pinMode(OUTPUT_PIN, OUTPUT); // Set OUTPUT_PIN as an output pin
+   
+    pinMode(head_Up_PIN, OUTPUT);
+    pinMode(head_Dn_PIN, OUTPUT);
+    pinMode(foot_Up_PIN, OUTPUT);
+    pinMode(foot_Dn_PIN, OUTPUT);
 
     //encoder_head.attachHalfQuad ( DT, CLK );
     //encoder_head.setCount ( 0 );
@@ -329,14 +343,54 @@ rf.register_callback(callback_massage_3, 500,
 
 void loop() {
     rf.do_events();
-    pinMode(OUTPUT_PIN_1, OUTPUT);
-    pinMode(OUTPUT_PIN_2, OUTPUT);
+    
     if (ButtonPressed) {
-        digitalWrite(OUTPUT_PIN_1, HIGH); // Replace OUTPUT_PIN with your actual pin
-        digitalWrite(OUTPUT_PIN_2, LOW); // Replace OUTPUT_PIN with your actual pin
-    } else {
-        digitalWrite(OUTPUT_PIN_1, HIGH);
-        digitalWrite(OUTPUT_PIN_2, HIGH); // Replace OUTPUT_PIN with your actual pin
+        Serial.print(F("Button ID: "));
+        Serial.println(But_ID);
+
+        // Perform actions based on the button ID
+        switch (But_ID) {
+            case 1: // Head Up
+                digitalWrite(head_Up_PIN, LOW);
+                digitalWrite(head_Dn_PIN, HIGH);
+                break;
+            case 2: // Head Down
+                digitalWrite(head_Dn_PIN, LOW);
+                digitalWrite(head_Up_PIN, HIGH);
+                break;
+            case 3: // Foot Up
+                digitalWrite(foot_Up_PIN, LOW);
+                digitalWrite(foot_Dn_PIN, HIGH);
+                break;
+            case 4: // Foot Down
+                digitalWrite(foot_Dn_PIN, LOW);
+                digitalWrite(foot_Up_PIN, HIGH);
+                break;
+            case 5: // Flat
+                // Add your action for Flat here
+                break;
+            case 6: // G
+                // Add your action for G here
+                break;
+            case 7: // Lift 1
+                // Add your action for Lift 1 here
+                break;
+            case 8: // Lift 2
+                // Add your action for Lift 2 here
+                break;
+            case 9: // Anti Snore
+                // Add your action for Anti Snore here
+                break;
+            default:
+                Serial.println(F("Unknown Button ID"));
+        }
+    }
+    else {
+        // If no button is pressed, ensure all outputs are LOW
+        digitalWrite(head_Up_PIN, HIGH);
+        digitalWrite(head_Dn_PIN, HIGH);
+        digitalWrite(foot_Up_PIN, HIGH); 
+        digitalWrite(foot_Dn_PIN, HIGH); 
     }
 }
 
